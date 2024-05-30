@@ -1,0 +1,218 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+    background: linear-gradient(to top right, #F4F7B2, #FFDEAD, #B0C4DE);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.menu-bar
+{
+    background:rgb(243, 108, 248);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    color:#fff;
+}
+
+.menu-bar ul li{
+    width:120px;
+    margin:15px;
+    padding:15px;
+}
+.menu-bar ul li a{
+    text-decoration:none;
+    color:#fff;
+}
+.active, .menu-bar ul li:hover{
+    background:#b109b6;
+    border-radius:3px;
+
+}
+
+.sub-menu-1{
+    display:none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display:block;
+    position:absolute;
+    background:rgb(235, 103, 252);
+    margin-top:15px;
+    margin-left:15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding:10px;
+    border-bottom:1px dotted #fff;
+    background:transparent;
+    border-radius:0;
+    text-align:left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom:none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color:#c5ccd8;
+}
+.sub-menu-2{
+    display:none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top:-40px;
+    margin-left:140px;
+    background:rgb(235, 103, 252);
+}
+
+
+  #scrollBtn {
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:30px;
+    z-index:99;
+    font-size:18px;
+    border:none;
+    outline:none;
+    background-color:red;
+    color:white;
+    cursor:pointer;
+    padding:15px;
+    border-radius:4px;
+}
+
+#scrollBtn:hover {
+    background-color: #6a13ec;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+#h{
+    font-size:30px;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 20px blue, 0 0 5px darkblue;
+    }
+    div.fixed {
+        position: fixed;
+        bottom: 500;
+        right: 0;
+        width: 200px;
+        border: 3px solid blue;
+      }    
+
+      .attractive-paragraph {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #220468;
+    }
+    
+    .subheading {
+        font-weight: bold;
+        color: #088cd3; /* Blue color */
+    }
+    
+    .highlight {
+        font-weight: bold;
+        font-size: 20px;
+        color: #ff0000; /* Green color */
+    }
+
+.main{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+.one{
+    list-style:none;
+    margin:0 0 50px;
+    padding: 0;
+}
+.two{
+    display:inline-block;
+    margin:0 10px;
+    text-align:center;
+    font-size:24px;
+    position: relative;
+    border: 2px solid #e013ff;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    border-radius: 50%;
+}
+.two:after{
+    position:absolute;
+    content: '';
+    top:3px;
+    right:3px;
+    bottom:3px;
+    left:3px;
+    background:#d620ee;
+    border-radius:50%;
+    transform-origin: 50% 50%;
+    transform:scale(0);
+    transition:all 0.5s;
+}
+.two:hover:after{
+    transform:scale(1);
+}
+.aa{
+    display:block;
+    text-decoration:none;
+    position:relative;
+    z-index:1;
+    color:#cc31f7;
+    text-shadow:2px 2px 1px rgba(245, 143, 199, 0.982);
+    transition:all .35s;
+}
+.two:hover .aa{
+    color:#ffffff;
+}
+.logo {
+    font-size: 40px;
+    background: -webkit-linear-gradient( #ff0039, #e38125);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+     0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+ 
